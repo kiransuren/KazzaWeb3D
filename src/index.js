@@ -191,12 +191,12 @@ var render = function(){
     cube.rotation.y += 0.05;
 
     //Display debugging data
-    document.getElementById("xpos").textContent = "XPos:" + (camera.position.x);
-    document.getElementById("ypos").textContent = "YPos:" + (camera.position.y);
-    document.getElementById("zpos").textContent = "ZPos:" + (camera.position.z);
-    document.getElementById("xrot").textContent = "XRot:" + (camera.rotation.x / Math.PI) *180;
-    document.getElementById("yrot").textContent = "YRot:" + (camera.rotation.y / Math.PI) *180;
-    document.getElementById("zrot").textContent = "ZRot:" + (camera.rotation.z / Math.PI) *180;
+    document.getElementById("xpos").textContent = "XPos:" + (camera.position.x.toFixed(3));
+    document.getElementById("ypos").textContent = "YPos:" + (camera.position.y.toFixed(3));
+    document.getElementById("zpos").textContent = "ZPos:" + (camera.position.z.toFixed(3));
+    document.getElementById("xrot").textContent = "XRot:" + ((camera.rotation.x / Math.PI) *180).toFixed(3);
+    document.getElementById("yrot").textContent = "YRot:" + ((camera.rotation.y / Math.PI) *180).toFixed(3);
+    document.getElementById("zrot").textContent = "ZRot:" + ((camera.rotation.z / Math.PI) *180).toFixed(3);
     
     renderer.render(scene, camera);         //Render Scene
 }
