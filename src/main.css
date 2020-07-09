@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    height: 100vh;
+    position: relative;
+}
+
+canvas {
+    position: absolute;
+    z-index:-1 ;
+}
+
+debugDisplay{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+}
+
+p{  
+    margin-top: 0;
+    position: relative;
+    padding: 0 0.25rem 0 0.25rem;
+    font-size: 18px;
+    z-index: 2;
+}
