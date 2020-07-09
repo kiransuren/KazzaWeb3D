@@ -10,14 +10,14 @@ canvas {
 }
 
 .debug{  
-    margin-top: 0;
+    margin: 0rem 0rem 0rem 1rem ;
+    padding: 0.2rem 0rem 0rem 0rem;
     position: relative;
-    padding: 0 0.25rem 0 0.25rem;
     font-size: 18px;
     z-index: 2;
 }
 
-.creds{
+#creds{
     margin-top: 0;
     position: absolute;
     top: 95vh;
@@ -26,4 +26,15 @@ canvas {
     font-size: 18px;
     z-index: 2;
 }
+
+
+#instructions{
+    margin-top: 0;
+    position: absolute;
+    top: 88vh;
+    left: 1vw;
+    font-size: 18px;
+    z-index: 2;
+}
+
 
